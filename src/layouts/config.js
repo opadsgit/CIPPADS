@@ -302,6 +302,11 @@ export const nativeMenuItems = [
             path: "/security/incidents/list-alerts",
             permissions: ["Security.Alert.*"],
           },
+          {
+            title: "MDO Alerts",
+            path: "/security/incidents/list-mdo-alerts",
+            permissions: ["Security.Alert.*"],
+          },
         ],
       },
       {
@@ -413,11 +418,6 @@ export const nativeMenuItems = [
           {
             title: "Status Pages",
             path: "/endpoint/autopilot/list-status-pages",
-            permissions: ["Endpoint.Autopilot.*"],
-          },
-          {
-            title: "Add Status Page",
-            path: "/endpoint/autopilot/add-status-page",
             permissions: ["Endpoint.Autopilot.*"],
           },
         ],
@@ -552,6 +552,7 @@ export const nativeMenuItems = [
       "Exchange.Room.*",
       "Exchange.SafeLinks.*",
       "Exchange.Group.*",
+      "Exchange.RetentionPolicies.*",
     ],
     items: [
       {
@@ -593,6 +594,11 @@ export const nativeMenuItems = [
             title: "Tenant Allow/Block Lists",
             path: "/email/administration/tenant-allow-block-lists",
             permissions: ["Exchange.SpamFilter.*"],
+          },
+          {
+            title: "Retention Policies & Tags",
+            path: "/email/administration/exchange-retention/policies",
+            permissions: ["Exchange.RetentionPolicies.*"],
           },
         ],
       },
